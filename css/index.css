@@ -198,6 +198,14 @@ header .intro button {
   padding: 0.5% 1%;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  header .intro .img-styler {
+    width: 100%;
+  }
+  header .intro h1 {
+    font-size: 3rem;
+  }
+}
 .about {
   display: flex;
   justify-content: space-between;
@@ -216,8 +224,18 @@ header .intro button {
   border: 1px solid lightgrey;
   padding: 2% 2%;
 }
+@media (max-width: 500px) {
+  .about {
+    flex-direction: column;
+  }
+  .about div {
+    width: 100%;
+    margin: 2% 0%;
+  }
+}
 .work-history {
   margin-left: 5%;
+  margin-top: 2%;
 }
 .work-history h2 {
   margin-bottom: 1%;

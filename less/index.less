@@ -141,6 +141,15 @@ header{
 			padding:.5% 1%;
 			cursor:pointer;
 		}
+
+		@media (max-width:500px){
+			.img-styler{
+				width:100%;
+			}
+			h1{
+				font-size:3rem;
+			}
+		}
 	}
 }//end of header
 
@@ -160,10 +169,19 @@ header{
 			padding:2% 2%;
 		}
 	}
+
+	@media (max-width:500px){
+		flex-direction:column;
+		div{
+			width:100%;
+			margin:2% 0%;
+		}
+	}
 }//end of about
 
 .work-history{
 	margin-left:5%;
+	margin-top:2%;
 	h2{
 		margin-bottom:1%;
 	}
