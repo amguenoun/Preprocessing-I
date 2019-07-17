@@ -49,7 +49,18 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-@regFont: 1.6rem;
+@regFontSize: 1.6rem;
+@headerFontFamily: 'Roboto', sans-serif;
+
+.flex-end(){
+	display:flex;
+	justify-content:flex-end;
+}
+
+.space-between(){
+	display:flex;
+	justify-content:space-between;
+}
 
 * {
     box-sizing: border-box;
@@ -70,33 +81,35 @@ body{
 
 h1{
 	font-size:5rem;
+	font-family:@headerFontFamily;
 }
 
 h2{
 	font-size:2.5rem;
 	font-weight:bold;
+	font-family:@headerFontFamily;
 }
 
 h3{
 	font-size:2rem;
+	font-family:@headerFontFamily;
 }
 
 p{
-	font-size:@regFont;
+	font-size:@regFontSize;
 }
 
 header{
 	width:100%;
 	margin-top:2%;
 	nav{
-		display:flex;
-		justify-content:flex-end;
+		.flex-end();
 		margin-bottom:2%;
 		a{
 			text-decoration:none;
 			color:black;
 			margin-left:2%;
-			font-size:@regFont;
+			font-size:@regFontSize;
 		}
 	}
 
@@ -132,8 +145,7 @@ header{
 }//end of header
 
 .about{
-	display:flex;
-	justify-content:space-between;
+	.space-between();
 	margin-top:2%;
 	div{
 		width:45%;
@@ -142,7 +154,7 @@ header{
 		}
 	}
 	ul{
-		font-size:@regFont;
+		font-size:@regFontSize;
 		li{
 			border:1px solid lightgrey;
 			padding:2% 2%;
@@ -158,7 +170,7 @@ header{
 	table{
 		width:90%;
 		text-align:left;
-		font-size:@regFont;
+		font-size:@regFontSize;
 		th, td:first-child{
 			font-weight:bold;
 		}
@@ -176,6 +188,16 @@ header{
 		}
 	}
 }//end of work-histoy
+
+.contact{
+	margin-top:2%;
+	border-top:1px solid lightgrey;
+	padding-top:2%;
+
+	p{
+		margin:1% 0%;
+	}
+}
 
 footer{
 	margin-top:2%;

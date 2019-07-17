@@ -143,13 +143,16 @@ body {
 }
 h1 {
   font-size: 5rem;
+  font-family: 'Roboto', sans-serif;
 }
 h2 {
   font-size: 2.5rem;
   font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 }
 h3 {
   font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
 }
 p {
   font-size: 1.6rem;
@@ -238,6 +241,14 @@ header .intro button {
 }
 .work-history table .odd {
   background-color: #dad6d6;
+}
+.contact {
+  margin-top: 2%;
+  border-top: 1px solid lightgrey;
+  padding-top: 2%;
+}
+.contact p {
+  margin: 1% 0%;
 }
 footer {
   margin-top: 2%;
