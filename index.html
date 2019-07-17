@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>My Resume</title>
-  <link rel="stylesheet" href="css/normalize.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -23,8 +23,10 @@
       <a href="#">Portfolio</a>
       <a href="#">Contact</a>
     </nav>
-    <div class="central">
-      <img src="" alt="Me at ny desk">
+    <div class="intro">
+      <div class="img-styler">
+        <img src="images/desk-img.jpg" alt="Me at my desk">
+      </div>
       <h1>Jonny Appleseed - Web Dev</h1>
       <h3>Technology is my jam!</h3>
       <hr>
@@ -37,9 +39,14 @@
   <section class="about">
     <div>
       <h2>Listen Up...</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ea facilis sequi odio architecto voluptates,
-        fugiat nesciunt consequuntur, in eos alias consectetur veritatis vero deserunt quidem optio, eligendi magni
-        labore!</p>
+      <p>Nullam vestibulum facilisis tellus id scelerisque. Phasellus molestie eros ut urna tincidunt accumsan. Donec
+        metus sapien, feugiat et nisl id, bibendum tincidunt ligula. Aenean eget ante quis dui rutrum ornare. Vivamus in
+        turpis quam. Donec ut posuere ex. Sed id placerat nulla, sit amet suscipit magna. Phasellus quis erat sed odio
+        tempor tristique vel vel felis. Nulla pellentesque accumsan sagittis. Ut arcu nibh, rutrum ac metus vel,
+        vehicula condimentum felis. Vestibulum leo velit, rutrum vel suscipit nec, dapibus non sem. Phasellus nec cursus
+        risus. Nulla tempus turpis sodales mi condimentum, sed dignissim felis tempor. Nullam non nulla eu arcu
+        convallis pharetra at ut lectus. Praesent mattis odio eu hendrerit faucibus. Quisque lacinia sem ut neque
+        elementum interdum. </p>
     </div>
     <div>
       <h2>Stuff I'm Good At:</h2>
@@ -56,25 +63,25 @@
   <section class="work-history">
     <h2>Work History</h2>
     <table>
-      <tr>
+      <tr class="even">
         <th>Yrs</th>
         <th>Company</th>
         <th>Title</th>
         <th>Tech Used</th>
       </tr>
-      <tr>
+      <tr class="odd">
         <td>1</td>
         <td>Apple</td>
         <td>Software Engineer</td>
         <td>Swift</td>
       </tr>
-      <tr>
+      <tr class="even">
         <td>2</td>
         <td>Microsoft</td>
         <td>Computer Scientist</td>
         <td>.NET</td>
       </tr>
-      <tr>
+      <tr class="odd">
         <td>3</td>
         <td>Amazon</td>
         <td>Dev Ops</td>
